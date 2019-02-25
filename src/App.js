@@ -136,7 +136,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, boxes, isProfileOpen, user } = this.state;
     return (
       <div className="App">
-         <Particles className='particles'
+        <Particles className='particles'
           params={particlesOptions}
         />
         <Navigation 
@@ -144,6 +144,7 @@ class App extends Component {
           onRouteChange={this.onRouteChange} 
           toggleModal={this.toggleModal}
         />
+        <h1 className="f1 fw6 ph0 mh0 white">Welcome to SmartBrain!</h1>
         { isProfileOpen &&
         <Modal>
           <Profile 
